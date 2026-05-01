@@ -1,0 +1,12 @@
+{
+  "otpFeatures": {
+    "SandboxAPI": false,
+    "ActuatorAPI": true,
+    "GraphQLApi": true,
+    "TransmodelApi": false,
+    "VectorTilesApi": false
+  },
+  "apiProcessingTimeout": "PT30S",
+  "transitServiceStart": "04:00:00",
+  "transitServiceEnd": "27:00:00"
+}

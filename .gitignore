@@ -1,0 +1,7 @@
+﻿# Local/runtime OTP artifacts
+router/data/otp/graph.obj
+router/data/otp/mogadishu.osm.pbf
+
+# Node artifacts
+**/node_modules/
+**/dist/

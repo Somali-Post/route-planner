@@ -1,0 +1,10 @@
+route_id,agency_id,route_short_name,route_long_name,route_desc,route_type,route_url,route_color,route_text_color,route_sort_order,continuous_pickup,continuous_drop_off,network_id,cemv_support
+1,MOG_TRANSIT,Blue Line,Wadnaha - Jaale Siyaad Roads Line,,3,,155DFC,FFFFFF,1,,,,
+2,MOG_TRANSIT,Orange Line,Afgooye - Makkah Almukarramah Roads Line,,3,,F54900,FFFFFF,2,,,,
+3,MOG_TRANSIT,Red Line,Balcad Road Line,,3,,E7000B,FFFFFF,3,,,,
+4,MOG_TRANSIT,Green Line,Sodonka - Airport Roads Line,,3,,00A63E,FFFFFF,4,,,,
+5,MOG_TRANSIT,Yellow Line,Warshaddaha - Kaxda Roads Line,,3,,FFDF20,FFFFFF,5,,,,
+6,MOG_TRANSIT,Gray Line #6,Daru Salaam Line,,3,,45556C,FFFFFF,6,,,,
+7,MOG_TRANSIT,Gray Line #7,Jazeera Line,,3,,45556C,FFFFFF,7,,,,
+8,MOG_TRANSIT,Gray Line #8,Ceelasha Biyaha Line,,3,,45556C,FFFFFF,8,,,,
+9,MOG_TRANSIT,Gray Line #9,Dayniile Line,,3,,45556C,FFFFFF,9,,,,

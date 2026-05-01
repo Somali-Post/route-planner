@@ -1,0 +1,23 @@
+﻿services:
+  otp-build:
+    image: opentripplanner/opentripplanner:2.6.0
+    container_name: otp2-mogadishu-build
+    environment:
+      JAVA_TOOL_OPTIONS: "-Xmx6G"
+    mem_limit: 8g
+    volumes:
+      - ./data/otp:/var/opentripplanner
+    command: ["--build", "--save"]
+
+  otp-serve:
+    image: opentripplanner/opentripplanner:2.6.0
+    container_name: otp2-mogadishu-serve
+    environment:
+      JAVA_TOOL_OPTIONS: "-Xmx6G"
+    mem_limit: 8g
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./data/otp:/var/opentripplanner
+    command: ["--load", "--serve"]
+    restart: unless-stopped

@@ -1,0 +1,19 @@
+{
+  "transit": {
+    "feedId": "mogadishu-pilot"
+  },
+  "osm": [
+    {
+      "source": "data/osm/<add-mogadishu-extract>.osm.pbf"
+    }
+  ],
+  "gtfs": [
+    {
+      "source": "data/gtfs/gtfs_mogadishu_pilot"
+    }
+  ],
+  "streetGraph": {
+    "save": true
+  },
+  "embedRouterConfig": false
+}

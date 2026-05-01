@@ -1,0 +1,112 @@
+{
+  "metadata": {
+    "name": "Mogadishu Public Transport Pilot",
+    "center": [2.0469, 45.3182],
+    "transferPenaltyMinutes": 7,
+    "averageBusSpeedKph": 18,
+    "source": "GTFS Schedule",
+    "agency": {
+      "id": "MOG_TRANSIT",
+      "name": "Mogadishu Public Transport Pilot",
+      "timezone": "Africa/Mogadishu"
+    },
+    "feed": {
+      "startDate": "20260427",
+      "endDate": "20270426",
+      "version": "v3"
+    }
+  },
+  "services": [
+    {
+      "id": "daily",
+      "days": {
+        "monday": true,
+        "tuesday": true,
+        "wednesday": true,
+        "thursday": true,
+        "friday": true,
+        "saturday": true,
+        "sunday": true
+      },
+      "startDate": "20260427",
+      "endDate": "20270426"
+    }
+  ],
+  "stops": [
+    {
+      "id": "unique-stop-id",
+      "code": "10001",
+      "name": "Stop Name",
+      "displayName": "Stop Name - Stop 10001",
+      "lat": 2.0,
+      "lng": 45.3,
+      "routeIds": ["route-id-1", "route-id-2"],
+      "description": "Optional stop description."
+    }
+  ],
+  "routes": [
+    {
+      "id": "route-id-1",
+      "name": "Blue Line",
+      "color": "#0f5ef7",
+      "description": "Short route description.",
+      "stops": ["unique-stop-id"],
+      "path": [[2.0, 45.3]],
+      "trips": ["trip-id-1"],
+      "directions": [
+        {
+          "tripId": "trip-id-1",
+          "directionId": 0,
+          "headsign": "Terminal",
+          "stopCount": 1
+        }
+      ],
+      "serviceWindow": {
+        "startMinutes": 240,
+        "endMinutes": 1380
+      },
+      "headwayMinutes": 12
+    }
+  ],
+  "trips": [
+    {
+      "id": "trip-id-1",
+      "routeId": "route-id-1",
+      "serviceId": "daily",
+      "headsign": "Terminal",
+      "directionId": 0,
+      "shapeId": "shape-id-1",
+      "stopTimes": [
+        {
+          "stopId": "unique-stop-id",
+          "arrival": "04:00:00",
+          "departure": "04:02:00",
+          "arrivalMinutes": 240,
+          "departureMinutes": 242,
+          "sequence": 1
+        }
+      ],
+      "frequencies": [
+        {
+          "startTime": "04:00:00",
+          "endTime": "23:00:00",
+          "startMinutes": 240,
+          "endMinutes": 1380,
+          "headwaySecs": 720,
+          "headwayMinutes": 12,
+          "exactTimes": false
+        }
+      ]
+    }
+  ],
+  "transfers": [
+    {
+      "fromStopId": "unique-stop-id",
+      "toStopId": "other-stop-id",
+      "fromRouteId": "",
+      "toRouteId": "",
+      "type": 0,
+      "minTransferMinutes": 3
+    }
+  ]
+}
